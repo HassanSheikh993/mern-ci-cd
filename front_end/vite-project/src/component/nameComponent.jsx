@@ -6,7 +6,7 @@ export function NameComponent(){
 
     const[name,setName] = useState();
       async function getName() {
-      const response = await axios.get("http://localhost:8000/api");
+      const response = await axios.get("http://54.147.132.36:8000/api");
         console.log(response.data);
         setName(response.data.name)
   }
